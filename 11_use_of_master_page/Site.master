@@ -1,0 +1,19 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="WebApplication2.Site" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Simple ASP.NET App</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink> |
+            <asp:HyperLink ID="lnkWelcome" runat="server" NavigateUrl="~/Welcome.aspx">Welcome</asp:HyperLink>
+            <hr />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        </div>
+    </form>
+</body>
+</html>
